@@ -5,6 +5,11 @@
 :root {
     --primary-color: #0f1b4c;
 }
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -56,6 +61,7 @@ a {
 
 .hero-warp {
     display: flex;
+    justify-content: center;
     position: relative;
     flex-direction: column;
     background: #e6f0ff;
@@ -99,15 +105,11 @@ a {
     border-radius: 8px;
 }
 
-.hero {
-    margin-top: 80px;
-}
-
-.hero .info {
+.hero-warp .info {
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-warp .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -115,7 +117,7 @@ a {
     color: #687690;
 }
 
-.hero .title {
+.hero-warp .title {
     margin-top: 8px;
     font-weight: 700;
     font-size: 6.2rem;
@@ -123,7 +125,7 @@ a {
     color: #000336;
 }
 
-.hero .desc {
+.hero-warp .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
